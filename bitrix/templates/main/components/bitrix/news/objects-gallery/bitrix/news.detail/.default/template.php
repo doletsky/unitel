@@ -39,14 +39,14 @@ $this->setFrameMode(true);
 	<?if($arResult['PREV_ELEM']['ID'] || $arResult['NEXT_ELEM']['ID']):?>
 		<div class="page-nav clearfix">
 			<?if($arResult['PREV_ELEM']['ID']):?>
-				<a href="<?=$arParams['SECTION_URL']?><?=$arResult['PREV_ELEM']['ID']?>/" class="page-nav-link page-nav-link-prev">
-					<span class="page-nav-link-title">Предыдущая новость</span>
+				<a href="<?=$arParams['SECTION_URL']?><?=$arResult['PREV_ELEM']['CODE']?>/" class="page-nav-link page-nav-link-prev">
+					<span class="page-nav-link-title">Предыдущее решение</span>
 					<span class="page-nav-link-text"><?=$arResult['PREV_ELEM']['NAME']?></span>
 				</a>
 			<?endif?>
 			<?if($arResult['NEXT_ELEM']['ID']):?>
-			<a href="<?=$arParams['SECTION_URL']?><?=$arResult['NEXT_ELEM']['ID']?>/" class="page-nav-link page-nav-link-next">
-				<span class="page-nav-link-title">Следующая новость</span>
+			<a href="<?=$arParams['SECTION_URL']?><?=$arResult['NEXT_ELEM']['CODE']?>/" class="page-nav-link page-nav-link-next">
+				<span class="page-nav-link-title">Следующее решение</span>
 				<span class="page-nav-link-text"><?=$arResult['NEXT_ELEM']['NAME']?></span>
 			</a>
 			<?endif?>

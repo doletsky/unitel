@@ -4,7 +4,7 @@ $rsElements = CIBlockElement::GetList(array('ID' => 'DESC'), array(
                'ACTIVE' => 'Y',
 			   ),
                false, array('nPageSize' => 1, 'nElementID' => $arResult['ID']),
-               array('ID', 'NAME'));
+               array('ID', 'NAME', 'CODE'));
 			   
 
 			
