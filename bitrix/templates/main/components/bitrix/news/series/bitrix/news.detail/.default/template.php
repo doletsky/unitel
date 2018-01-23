@@ -233,7 +233,7 @@ $this->setFrameMode(true);
 										</div>
 									</div>
 									<div class="code_conf">
-										<h3>Код конфигурации <span class="product_conf_name">МРЗ-1</span>:</h3>
+										<h3>Код конфигурации <span class="product_conf_name">МРЗ-3Л3</span>:</h3>
 										<div class="conf_list">
 											<div class="conf_item conf_type_of_function" id="type_of_function_select_conf"></div>
 											<div class="conf_item conf_diapazon" id="diapazon_select_conf"></div>
@@ -266,7 +266,7 @@ $this->setFrameMode(true);
                       <p>2. Блок питания</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
-                          <option selected value="PS3">пост/перем. 110-220 ВЗ</option>
+                          <option selected value="PS3">пост/перем. 110-220 В</option>
                         </select>
                       </div>
                     </div>
@@ -608,7 +608,7 @@ $this->setFrameMode(true);
                       <p>2. Блок питания</p>
                       <div class="config_select">
                         <select id="mrz_block_select" readonly name="config_select[]" class="select-2">
-                          <option selected value="PS3">пост/перем. 110-220 ВЗ</option>
+                          <option selected value="PS3">пост/перем. 110-220 В</option>
                         </select>
                       </div>
                     </div>
@@ -616,17 +616,17 @@ $this->setFrameMode(true);
                       <p>3. Дискретные входы</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
-						  <option value="BI01">пост. 220 В; 1 мс; 2 мА</option>
-						  <option value="BI02">пост. 110 В; 1 мс; 2 мА</option>
-						  <option value="BI05">пост. 220 В; 1 мс; 4 мА</option>
+						  <option value="BI01">пост. 220 В;</option>
+						  <option value="BI02">пост. 110 В;</option>
+						  <?/*?><option value="BI05">пост. 220 В; 1 мс; 4 мА</option>
                           <option selected value="BI06">пост. 110 В; 1 мс; 4 мА</option>
                           <option value="BI11">перем. 220 В; 11 мс; 2 мА</option>
                           <option value="BI13">пост. 220 В; 1 мс; 2 мА; перем. 220 В; 21 мс; 2 мА</option>
-                          <option value="BI14">пост. 110 В; 1 мс; 2 мА; перем. 110 В; 21 мс; 2 мА</option>
+                          <option value="BI14">пост. 110 В; 1 мс; 2 мА; перем. 110 В; 21 мс; 2 мА</option><?*/?>
                         </select>
                       </div>
                     </div>
-                    <div class="config_item">
+                    <?/*?><div class="config_item">
                       <p>4. Дискретные выходы</p>
                       <div class="config_select">
                         <select readonly name="config_select[]" class="select-2">
@@ -644,9 +644,9 @@ $this->setFrameMode(true);
                         
                         </select>
                       </div>
-                    </div>
+                    </div><?*/?>
                     <div class="config_item">
-                      <p>6. Номинальный фазовый ток</p>
+                      <p>4. Номинальный фазовый ток</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
                           <option value="Ir1">1 А</option>
@@ -656,17 +656,15 @@ $this->setFrameMode(true);
                       </div>
                     </div>
                     <div class="config_item">
-                      <p>7. Номинальный ток нулевой последовательности</p>
+                      <p>5. Номинальный ток нулевой последовательности</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
                           <option selected value="Ior1">1 А</option>
-                          <option value="Ior2">5 А</option>
-                          
                         </select>
                       </div>
                     </div>
                     <div class="config_item">
-                      <p>8. Модуль связи - Порт 1</p>
+                      <p>6. Модуль связи - Порт 1</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
                           <option value="IM10">Отсутствует</option>
@@ -685,7 +683,7 @@ $this->setFrameMode(true);
                       </div>
                     </div>
                     <div class="config_item">
-                      <p>9. Модуль связи - Порт 2</p>
+                      <p>7. Модуль связи - Порт 2</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
                           <option selected value="IM20">Отсутствует</option>
@@ -696,7 +694,7 @@ $this->setFrameMode(true);
                       </div>
                     </div>
                     <div class="config_item">
-                      <p>10. Модуль связи - Порт 3</p>
+                      <p>8. Модуль связи - Порт 3</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
                           <option selected value="IM30">Отсутствует</option>
@@ -708,7 +706,7 @@ $this->setFrameMode(true);
                       </div>
                     </div>
                     <div class="config_item">
-                      <p>11. Модуль связи - Порт 4</p>
+                      <p>9. Модуль связи - Порт 4</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
 						  <option selected value="IM40">Отсутствует</option>
@@ -725,7 +723,7 @@ $this->setFrameMode(true);
                         </select>
                       </div>
                     </div>
-                    <div class="config_item">
+                    <?/*?><div class="config_item">
                       <p>12. Язык</p>
                       <div class="config_select">
                         <select readonly name="config_select[]" class="select-2">
@@ -733,9 +731,9 @@ $this->setFrameMode(true);
                          
                         </select>
                       </div>
-                    </div>
+                    </div><?*/?>
                     <div class="config_item">
-                     <p>13. Набор функций</p>
+                     <p>10. Набор функций</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
                           <option selected value="F1">Базовый</option>
@@ -744,16 +742,16 @@ $this->setFrameMode(true);
                         </select>
                       </div>
                     </div>
-                    <div class="config_item">
+                    <?/*><div class="config_item">
                       <p>14. Корпус</p>
                       <div class="config_select">
                         <select readonly name="config_select[]" class="select-2">
                           <option selected value="Box3">Металлический, утопленный монтаж</option>
                          </select>
                       </div>
-                    </div>
+                    </div><?*/?>
                     <div class="config_item">
-                      <p>15. Дисплей</p>
+                      <p>11. Дисплей</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
                           <option  value="D1">Символьный - 4 строки по 20 символов</option>
@@ -761,7 +759,7 @@ $this->setFrameMode(true);
                         </select>
                       </div>
                     </div>
-                    <div class="config_item">
+                    <?/*?><div class="config_item">
                       <p>16. Клеммы</p>
                       <div class="config_select">
                         <select readonly name="config_select[]" class="select-2">
@@ -769,19 +767,22 @@ $this->setFrameMode(true);
 
                         </select>
                       </div>
-                    </div>
+                    </div><?*/?>
                     <div class="config_item">
-                      <p>17. МЭК 61850</p>
+                      <p>12. Цифровой стандарт</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
-                          <option selected value="MMS0">Нет</option>
-                          <option value="MMS1">Да</option>
-                        
+                            <option selected value="MMS0">Нет</option>
+                          <option value="MMS1">МЭК 61850</option>
+                          <option value="MMS2">МЭК 60870-5-103</option>
+                            <option value="MMS3">МЭК 60870-5-104</option>
+                            <option value="MMS4">Modbus RTU</option>
+                            <option value="MMS5">Modbus TCP</option>
                         </select>
                       </div>
                     </div>
                     <div class="config_item">
-                      <p>18. Модули ввода/вывода</p>
+                      <p>13. Модули ввода/вывода</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
                           <option value="EM00">(16BI+9BO)</option>
@@ -791,7 +792,7 @@ $this->setFrameMode(true);
                         </select>
                       </div>
                     </div>
-                    <div class="config_item">
+                    <?/*?><div class="config_item">
                       <p>19. Каналы постоянного тока</p>
                       <div class="config_select">
                         <select readonly name="config_select[]" class="select-2">
@@ -799,7 +800,7 @@ $this->setFrameMode(true);
                          
                         </select>
                       </div>
-                    </div>
+                    </div><?*/?>
 									</div><?endif?>
 								</div>
 								<!-- <div class="form-block">
