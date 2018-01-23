@@ -51,7 +51,7 @@ $APPLICATION->SetTitle("Обучение");
 				<div class="support-footer-text">
 					 Высокое качество продукции является основным приоритетом компании. В наших устройствах используются компоненты от ведущих мировых производителей: Freescale, Analog Devices
 				</div>
- <a href="/support/study/" class="btn">Список семинаров</a> <br>
+ <a href="/support/study/" onclick="$('.feedback-btn').click();return false;" class="btn">Запись на семинар</a> <br>
 			</div>
 		</div>
 	</div>
