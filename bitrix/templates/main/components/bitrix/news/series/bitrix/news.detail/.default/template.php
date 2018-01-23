@@ -239,13 +239,39 @@ $this->setFrameMode(true);
 									<div class="code_conf">
 										<h3>Код конфигурации <span class="product_conf_name">МРЗ-3Л3</span>:</h3>
 										<div class="conf_list">
-											<div class="conf_item conf_type_of_function" id="type_of_function_select_conf"></div>
-											<div class="conf_item conf_diapazon" id="diapazon_select_conf"></div>
-											<div class="conf_item conf_execution" id="execution_select_conf"></div>
-											<div class="conf_item conf_output" id="output_select_conf"></div>
-											<div class="conf_item conf_klem_block" id="klem_block_select_conf"></div>
-											<div class="conf_item conf_nominal" id="nominal_select_conf"></div>
-											<div class="conf_item conf_gost" id="gost_select_conf"></div>
+                                            <?if($arResult['ID']==17)://for РЗА 110-220 кВ МРЗ-3?>
+                                                <div class="conf_item conf_type_of_function" id="type_of_function_select_conf"></div>
+                                                <div class="conf_item conf_diapazon" id="diapazon_select_conf"></div>
+                                                <div class="conf_item conf_execution" id="execution_select_conf"></div>
+                                                <div class="conf_item conf_output" id="output_select_conf"></div>
+                                                <div class="conf_item conf_klem_block" id="klem_block_select_conf"></div>
+                                                <div class="conf_item conf_nominal" id="nominal_select_conf"></div>
+                                                <div class="conf_item conf_gost" id="gost_select_conf"></div>
+                                            <?elseif($arResult['ID']==16)://for РЗА 6-35 кВ МРЗ-1?>
+                                                <div class="conf_item conf_type_of_function" id="type_of_function_select_conf"></div>
+                                                <div class="conf_item conf_diapazon" id="diapazon_select_conf"></div>
+                                                <div class="conf_item conf_execution" id="execution_select_conf"></div>
+                                                <div class="conf_item conf_output" id="output_select_conf"></div>
+                                                <div class="conf_item conf_klem_block" id="klem_block_select_conf"></div>
+                                                <div class="conf_item conf_nominal" id="nominal_select_conf"></div>
+                                                <div class="conf_item conf_gost" id="gost_select_conf"></div>
+                                            <?elseif($arResult['ID']==18):// for РЗА 6-35 кВ МРЗ-3Л3?>
+                                                <div class="conf_item" id="type_of_function_select_conf"></div>
+                                                <div class="conf_item" id="diapazon_select_conf"></div>
+                                                <div class="conf_item" id="disc_output_select_conf"></div>
+                                                <div class="conf_item" id="nominal_faz_select_conf"></div>
+                                                <div class="conf_item" id="nominal_tok_select_conf"></div>
+                                                <div class="conf_item" id="mod_conect1_conf"></div>
+                                                <div class="conf_item" id="mod_conect2_conf"></div>
+                                                <br>
+                                                <div class="conf_item" id="mod_conect3_conf"></div>
+                                                <div class="conf_item" id="mod_conect4_conf"></div>
+                                                <div class="conf_item" id="var_functions_conf"></div>
+                                                <div class="conf_item" id="screen_conf"></div>
+                                                <div class="conf_item" id="numb_standart_conf"></div>
+                                                <div class="conf_item" id="mod_out_in_conf"></div>
+                                            <?endif?>
+
 										</div>
 									</div>
 									<div class="number_conf">
@@ -619,7 +645,7 @@ $this->setFrameMode(true);
                     <div class="config_item">
                       <p>3. Дискретные входы</p>
                       <div class="config_select">
-                        <select name="config_select[]" class="select-2">
+                        <select name="config_select[]" id="disc_output_select" class="select-2">
                           <option selected value="">Не выбрано</option>
 						  <option value="BI01">пост. 220 В</option>
 						  <option value="BI02">пост. 110 В</option>
@@ -653,7 +679,7 @@ $this->setFrameMode(true);
                     <div class="config_item">
                       <p>4. Номинальный фазовый ток</p>
                       <div class="config_select">
-                        <select name="config_select[]" class="select-2">
+                        <select name="config_select[]" id="nominal_faz_select" class="select-2">
                         	<option selected value="">Не выбрано</option>
                           <option value="Ir1">1 А</option>
                           <option value="Ir2">5 А</option>
@@ -664,7 +690,7 @@ $this->setFrameMode(true);
                     <div class="config_item">
                       <p>5. Номинальный ток нулевой последовательности</p>
                       <div class="config_select">
-                        <select name="config_select[]" class="select-2">
+                        <select name="config_select[]" id="nominal_tok_select" class="select-2">
                         	<option selected value="">Не выбрано</option>
                           <option value="Ior1">1 А</option>
                         </select>
@@ -673,7 +699,7 @@ $this->setFrameMode(true);
                     <div class="config_item">
                       <p>6. Модуль связи - Порт 1</p>
                       <div class="config_select">
-                        <select name="config_select[]" class="select-2">
+                        <select name="config_select[]" id="mod_conect1" class="select-2">
                         	<option selected value="">Не выбрано</option>
                           <option value="IM10">Отсутствует</option>
                           <option value="IM11">2x100BASE-TX (2xRJ45)</option>
@@ -693,7 +719,7 @@ $this->setFrameMode(true);
                     <div class="config_item">
                       <p>7. Модуль связи - Порт 2</p>
                       <div class="config_select">
-                        <select name="config_select[]" class="select-2">
+                        <select name="config_select[]" id="mod_conect2" class="select-2">
                         	<option selected value="">Не выбрано</option>
                           <option value="IM20">Отсутствует</option>
                           <option value="IM21">Последовательный оптический интерфейс для УКБ (2xST, MM, 820 нм)</option>
@@ -705,7 +731,7 @@ $this->setFrameMode(true);
                     <div class="config_item">
                       <p>8. Модуль связи - Порт 3</p>
                       <div class="config_select">
-                        <select name="config_select[]" class="select-2">
+                        <select name="config_select[]" id="mod_conect3" class="select-2">
                         	<option selected value="">Не выбрано</option>
                           <option value="IM30">Отсутствует</option>
                           <option value="IM31">Последовательный оптический интерфейс для УКБ (2xST, MM, 820 нм)</option>
@@ -718,7 +744,7 @@ $this->setFrameMode(true);
                     <div class="config_item">
                       <p>9. Модуль связи - Порт 4</p>
                       <div class="config_select">
-                        <select name="config_select[]" class="select-2">
+                        <select name="config_select[]" id="mod_conect4" class="select-2">
                         	<option selected value="">Не выбрано</option>
 						  <option value="IM40">Отсутствует</option>
                           <option value="IM42">Последовательный оптический интерфейс для УКБ (2xST, MM, 820 нм) + коаксиальный IRIQ-B/PPS (F-коннектор)</option>
@@ -746,7 +772,7 @@ $this->setFrameMode(true);
                     <div class="config_item">
                      <p>10. Набор функций</p>
                       <div class="config_select">
-                        <select name="config_select[]" class="select-2">
+                        <select name="config_select[]" id="var_functions" class="select-2">
                         	<option selected value="">Не выбрано</option>
                           <option value="F1">Базовый</option>
                           <option value="F2">Расширенный</option>
@@ -765,7 +791,7 @@ $this->setFrameMode(true);
                     <div class="config_item">
                       <p>11. Дисплей</p>
                       <div class="config_select">
-                        <select name="config_select[]" class="select-2">
+                        <select name="config_select[]" id="screen" class="select-2">
                         	<option selected value="">Не выбрано</option>
                           <option  value="D1">Символьный - 4 строки по 20 символов</option>
                           <option value="D2">Графический - 640х480 точек</option>
@@ -784,7 +810,7 @@ $this->setFrameMode(true);
                     <div class="config_item">
                       <p>12. Цифровой стандарт</p>
                       <div class="config_select">
-                        <select name="config_select[]" class="select-2">
+                        <select name="config_select[]" id="numb_standart" class="select-2">
                         	<option selected value="">Не выбрано</option>
                             <option value="MMS0">Нет</option>
                           <option value="MMS1">МЭК 61850</option>
@@ -798,7 +824,7 @@ $this->setFrameMode(true);
                     <div class="config_item">
                       <p>13. Модули ввода/вывода</p>
                       <div class="config_select">
-                        <select name="config_select[]" class="select-2">
+                        <select name="config_select[]" id="mod_out_in" class="select-2">
                         	<option selected value="">Не выбрано</option>
                           <option value="EM00">(16BI+9BO)</option>
                           <option value="EM01">(16BI+9BO)+1x(16BI+12BO):(1xУКБ1)</option>
