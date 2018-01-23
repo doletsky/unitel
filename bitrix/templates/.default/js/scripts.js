@@ -160,8 +160,10 @@ if(window.location.href.indexOf("dealers") > -1) {
 }
 
 if(window.location.href.indexOf("rza-6-35-kv-mrz-3l3") > -1) {
-    $('#diapazon_select option').attr('disabled', 'disabled');
-    $('#diapazon_select').attr('disabled', 'disabled');
+    $('#mrz_type_select option').attr('disabled', 'disabled');
+    $('#mrz_type_select').attr('disabled', 'disabled');
+    $('#mrz_block_select option').attr('disabled', 'disabled');
+    $('#mrz_block_select').attr('disabled', 'disabled');
 }
 
 $('img.svg').each(function(){

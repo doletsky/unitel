@@ -5,8 +5,7 @@ $(document).ready(function(){
 
 	
 	$(window).scroll(function(){
-		//console.log( parseInt($(this).scrollTop()+h1) +' ! '+$(".item-spec .item-spec-block-cell").offset().top);
-		if( $(".item-spec .item-spec-block-cell").offset() && ($(window).scrollTop()+h1) >= $(".item-spec .item-spec-block-cell").offset().top && !isNumber) {
+		/*if( $(".item-spec .item-spec-block-cell").offset() && ($(window).scrollTop()+h1) >= $(".item-spec .item-spec-block-cell").offset().top && !isNumber) {
 			$(".item-spec .item-spec-block-cell span").each(function(){
 				var $number = parseInt($(this).text());
 				$(this).animateNumber({
@@ -14,7 +13,7 @@ $(document).ready(function(){
 				},500);
 				isNumber = true;
 			});
-		}
+		}*/
 
 
 		$(".bounce-in-left,.bounce-in-right").each(function(){
