@@ -108,9 +108,28 @@ $(window).on('scroll', function(){
 	    $('.scrolldown').fadeIn(300);
 	  }
 });
+
 function scrollFade(){
 	$('.scrolldown').fadeOut(300);
 }
+
+$('.form_new .your_contacts input[type="phone"]').mask("+7(999)999-99-99");
+
+$('.form_new .your_contacts input[name="user_name"], .form_new .your_contacts input[name="user_dol"]').on('keyup', function(){
+	this.value = this.value.replace(/^[a-zA-Z0-9]*$/i, "");
+});
+
+$('.form_new .your_contacts input[type="email"]').on('keyup', function(){
+	var valid = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/.test(this.value);
+    if(valid == true){
+    	$(this).parent().find('p.req').hide();
+    } else{
+    	$(this).parent().find('p.req').show();
+    }
+});
+
+
+
 $('.scrolldown').on('click', function(){
 	$("html, body").animate({ scrollTop: $('.slick-dots').offset().top }, 1000);
 	setTimeout(scrollFade, 1000);

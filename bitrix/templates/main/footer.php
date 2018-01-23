@@ -103,6 +103,7 @@
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="/bitrix/templates/.default/js/plugins.js"></script>
+	<script src="/bitrix/templates/.default/js/maskedInput.js"></script>
 	<script src="/bitrix/templates/.default/js/jquery.fancybox.pack.js"></script>
 	<script src="/bitrix/templates/.default/js/select2.min.js"></script>
 	<script src="/bitrix/templates/.default/js/scripts.js"></script>
