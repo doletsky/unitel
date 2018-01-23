@@ -183,6 +183,8 @@ if(window.location.href.indexOf("rza-6-35-kv-mrz-3l3") > -1) {
     $('#mrz_type_select').attr('disabled', 'disabled');
     $('#mrz_block_select option').attr('disabled', 'disabled');
     $('#mrz_block_select').attr('disabled', 'disabled');
+    $('#type_of_function_select_conf').text('МРЗ-3Л3');
+    $('#diapazon_select_conf').text('PS3');
 }
 
 $('img.svg').each(function(){
@@ -682,6 +684,7 @@ $('.feedback-btn').on('click', function(){
 	if($(this).hasClass('active')){
 		$('.feedback').addClass('animated');
 		$('.feedback').toggleClass('active');
+        $('.form.feedback-form').attr('action','/ajax/contacts_feedback_form.php');
 		setTimeout(function(){
 			$('.feedback').removeClass('animated');
 		},500)
@@ -695,6 +698,11 @@ $('.feedback-btn').on('click', function(){
 	$(this).toggleClass('active');
 	
 })
+$('#support_study').on('click', function(){
+    $('.feedback-btn').click();
+    $('.active .form.feedback-form').attr('action','/ajax/to_seminar_feedback_form.php');
+    return false;
+});
 
 /* scroll to */
 
