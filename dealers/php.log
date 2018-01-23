@@ -1,0 +1,2 @@
+[21-Jul-2017 19:20:10 Europe/Moscow] PHP Parse error:  syntax error, unexpected '"', expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/p849/unitel.studio-v.ru/bitrix/templates/main/components/bitrix/news.list/dealers-map/template.php on line 125
+[21-Jul-2017 19:22:34 Europe/Moscow] PHP Parse error:  syntax error, unexpected ''ADDRESS'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/p849/unitel.studio-v.ru/bitrix/templates/main/components/bitrix/news.list/dealers-map/template.php on line 125

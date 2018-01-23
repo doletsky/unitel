@@ -1,0 +1,1 @@
+/home/p849/unitel.studio-v.ru/bitrix/modules/sale/install/components/bitrix/sale.personal.order/templates/.default/bitrix//home/p849/unitel.studio-v.ru/bitrix/components/bitrix/sale.personal.order/templates/.default/bitrix/

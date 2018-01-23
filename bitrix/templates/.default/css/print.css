@@ -1,0 +1,14 @@
+header,
+footer,
+#panel,
+.item-head .item-head-img,
+.container .item-img-col,
+#item-footer,
+.item-info-list,
+.container .page-content-sidebar
+{
+  display:none;
+}
+.container .item-desc-col,.container .page-content-body{
+  width: 100%;
+}

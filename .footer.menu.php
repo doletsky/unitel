@@ -1,0 +1,53 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Проекты", 
+		"/projects/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Партнеры", 
+		"/partners/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Вакансии", 
+		"/vacancies/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Обучение", 
+		"/support/study/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Пресса о нас", 
+		"/press-about-us/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Галерея объектов", 
+		"/objects-gallery/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Отраслевые решения", 
+		"/industry-solutions/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

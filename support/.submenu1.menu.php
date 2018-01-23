@@ -1,0 +1,25 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Шеф-монтаж", 
+		"/support/shef-montazh/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Шеф-наладка", 
+		"/support/shef-naladka/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Обучение", 
+		"/support/obuchenie/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

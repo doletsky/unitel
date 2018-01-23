@@ -1,0 +1,16 @@
+a.search-page-params {
+	border-bottom: 1px dashed blue;
+	text-decoration: none;
+}
+div.search-page-params {
+	margin-top: 6px;
+}
+.search-item-rate {font-size: 11px;}
+.search-page .input{
+  width:300px;
+  display: inline-block;
+}
+.search-item{
+  padding: 20px 0;
+  border-bottom: 1px solid #dcdcdc;
+}

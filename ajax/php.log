@@ -1,0 +1,8 @@
+[25-Aug-2017 16:21:04 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/p849/unitel.studio-v.ru/bitrix/components/my/main.feedback/component.php on line 121
+[25-Aug-2017 16:52:57 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in /home/p849/unitel.studio-v.ru/bitrix/components/my/main.feedback/component.php on line 14
+[28-Aug-2017 16:50:02 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/p849/unitel.studio-v.ru/bitrix/components/my/main.feedback/templates/.default/template.php on line 568
+[01-Sep-2017 13:44:22 Europe/Moscow] PHP Fatal error:  Class 'PhpOffice\PhpWord\PhpWord' not found in /home/p849/unitel.studio-v.ru/ajax/price_request_form.php on line 485
+[01-Sep-2017 13:48:18 Europe/Moscow] PHP Fatal error:  Class 'PhpOffice\PhpWord\PhpWord' not found in /home/p849/unitel.studio-v.ru/ajax/price_request_form.php on line 486
+[01-Sep-2017 13:48:43 Europe/Moscow] PHP Fatal error:  Class 'PhpOffice\PhpWord\Settings' not found in /home/p849/unitel.studio-v.ru/ajax/price_request_form.php on line 485
+[01-Sep-2017 13:49:23 Europe/Moscow] PHP Fatal error:  Class 'PhpOffice\PhpWord\Collection\Bookmarks' not found in /home/p849/unitel.studio-v.ru/bitrix/php_interface/PhpWord/PhpWord.php on line 90
+[01-Sep-2017 14:00:36 Europe/Moscow] PHP Fatal error:  Class 'PhpOffice\PhpWord\PhpWord' not found in /home/p849/unitel.studio-v.ru/ajax/price_request_form.php on line 485
