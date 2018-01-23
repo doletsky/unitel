@@ -197,23 +197,27 @@ $this->setFrameMode(true);
 										<h3>Ваши контактные данные</h3>
 										<span class="form_input_wrap">
 											<input type="text" required="true" name="user_name" placeholder="Имя" class="input valid">
-											<p class="req">Данное поле обязательно для заполнения</p>
+											<p class="req">Введите корректное имя</p>
 										</span>
 										<span class="form_input_wrap">
 											<input type="text" required="true" name="user_dol" placeholder="Должность" class="input valid">
-											<p class="req">Данное поле обязательно для заполнения</p>
+											<p class="req">Введите корректную должность</p>
 										</span>
 										<span class="form_input_wrap">
 											<input type="text" required="true" name="MESSAGE" placeholder="Компания" class="input valid">
-											<p class="req">Данное поле обязательно для заполнения</p>
+											<p class="req">Введите корректную компанию</p>
 										</span>
 										<span class="form_input_wrap">
-											<input type="text" required="true" name="user_email" placeholder="Телефон или электронная почта" class="input valid">
-											<p class="req">Данное поле обязательно для заполнения</p>
+											<input type="phone" required="true" name="user_phone" placeholder="Телефон" class="input valid">
+											<p class="req">Введите корректный телефон</p>
+										</span>
+										<span class="form_input_wrap">
+											<input type="email" required="true" name="user_email" placeholder="Электронная почта" class="input valid">
+											<p class="req">Введите корректный email</p>
 										</span>
 										<span class="form_input_wrap">
 											<input type="text" required="true" name="user_obj" placeholder="Объект/Титул проекта" class="input valid">
-											<p class="req">Данное поле обязательно для заполнения</p>
+											<p class="req">Введите корректный объект/титул</p>
 										</span>
 										<!-- <input type="text" required="true" name="user_type" placeholder="Тип запроса" class="input valid"> -->
 										<!-- <div class="user_type_select_wrap">
@@ -229,7 +233,7 @@ $this->setFrameMode(true);
 												<option value="konkurs">Конкурс/Проектная документация</option>
 												<option value="delivery">Поставка</option>
 					                        </select>
-					                        <p class="req">Данное поле обязательно для заполнения</p>
+					                        <p class="req">Введите корректный тип запроса</p>
 										</div>
 									</div>
 									<div class="code_conf">
@@ -616,8 +620,9 @@ $this->setFrameMode(true);
                       <p>3. Дискретные входы</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
-						  <option value="BI01">пост. 220 В;</option>
-						  <option value="BI02">пост. 110 В;</option>
+                          <option selected value="">Не выбрано</option>
+						  <option value="BI01">пост. 220 В</option>
+						  <option value="BI02">пост. 110 В</option>
 						  <?/*?><option value="BI05">пост. 220 В; 1 мс; 4 мА</option>
                           <option selected value="BI06">пост. 110 В; 1 мс; 4 мА</option>
                           <option value="BI11">перем. 220 В; 11 мс; 2 мА</option>
@@ -649,8 +654,9 @@ $this->setFrameMode(true);
                       <p>4. Номинальный фазовый ток</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
+                        	<option selected value="">Не выбрано</option>
                           <option value="Ir1">1 А</option>
-                          <option selected value="Ir2">5 А</option>
+                          <option value="Ir2">5 А</option>
                           
                         </select>
                       </div>
@@ -659,7 +665,8 @@ $this->setFrameMode(true);
                       <p>5. Номинальный ток нулевой последовательности</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
-                          <option selected value="Ior1">1 А</option>
+                        	<option selected value="">Не выбрано</option>
+                          <option value="Ior1">1 А</option>
                         </select>
                       </div>
                     </div>
@@ -667,10 +674,11 @@ $this->setFrameMode(true);
                       <p>6. Модуль связи - Порт 1</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
+                        	<option selected value="">Не выбрано</option>
                           <option value="IM10">Отсутствует</option>
                           <option value="IM11">2x100BASE-TX (2xRJ45)</option>
                           <option value="IM11P">2x100BASE-TX (2xRJ45), синхронизация времени PTPv2</option>
-                          <option selected value="IM11S">2x100BASE-TX (2xRJ45), встроенный Switch, с поддержкой HSR/PRP/RSTP</option>
+                          <option value="IM11S">2x100BASE-TX (2xRJ45), встроенный Switch, с поддержкой HSR/PRP/RSTP</option>
                           <option value="IM12">2x100BASE-FX (2xLC, MM, 1300 нм)</option>
 						  <option value="IM12P">2x100BASE-FX (2xLC, MM, 1300 нм), синхронизация времени PTPv2</option>
 						  <option value="IM12S">2x100BASE-FX (2xLC, MM, 1300 нм), встроенный Switch, с поддержкой HSR/PRP/RSTP</option>
@@ -686,7 +694,8 @@ $this->setFrameMode(true);
                       <p>7. Модуль связи - Порт 2</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
-                          <option selected value="IM20">Отсутствует</option>
+                        	<option selected value="">Не выбрано</option>
+                          <option value="IM20">Отсутствует</option>
                           <option value="IM21">Последовательный оптический интерфейс для УКБ (2xST, MM, 820 нм)</option>
                           <option value="IM22">Оптический интерфейс для ДЗЛ С37.94(NRZ)/G.704(CMI) (2xST, MM, 820 нм)</option>
 
@@ -697,7 +706,8 @@ $this->setFrameMode(true);
                       <p>8. Модуль связи - Порт 3</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
-                          <option selected value="IM30">Отсутствует</option>
+                        	<option selected value="">Не выбрано</option>
+                          <option value="IM30">Отсутствует</option>
                           <option value="IM31">Последовательный оптический интерфейс для УКБ (2xST, MM, 820 нм)</option>
                           <option value="IM32">Оптический интерфейс для ДЗЛ С37.94(NRZ)/G.704(CMI) (2xST, MM, 820 нм)</option>
                           <option value="IM34">Последовательный оптический интерфейс для УКБ (2xST, MM, 820 нм) + коаксиальный IRIQ-B/PPS (F-коннектор)</option>
@@ -709,7 +719,8 @@ $this->setFrameMode(true);
                       <p>9. Модуль связи - Порт 4</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
-						  <option selected value="IM40">Отсутствует</option>
+                        	<option selected value="">Не выбрано</option>
+						  <option value="IM40">Отсутствует</option>
                           <option value="IM42">Последовательный оптический интерфейс для УКБ (2xST, MM, 820 нм) + коаксиальный IRIQ-B/PPS (F-коннектор)</option>
                           <option value="IM43">Коаксиальный IRIG-B/PPS (F-коннектор)</option>
                           <option value="IM46">1x100BASE-TX (1xRJ45) + коаксиальный IRIG-B/PPS (F-коннектор)</option>
@@ -736,7 +747,8 @@ $this->setFrameMode(true);
                      <p>10. Набор функций</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
-                          <option selected value="F1">Базовый</option>
+                        	<option selected value="">Не выбрано</option>
+                          <option value="F1">Базовый</option>
                           <option value="F2">Расширенный</option>
                         
                         </select>
@@ -754,8 +766,9 @@ $this->setFrameMode(true);
                       <p>11. Дисплей</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
+                        	<option selected value="">Не выбрано</option>
                           <option  value="D1">Символьный - 4 строки по 20 символов</option>
-                          <option selected value="D2">Графический - 640х480 точек</option>
+                          <option value="D2">Графический - 640х480 точек</option>
                         </select>
                       </div>
                     </div>
@@ -772,7 +785,8 @@ $this->setFrameMode(true);
                       <p>12. Цифровой стандарт</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
-                            <option selected value="MMS0">Нет</option>
+                        	<option selected value="">Не выбрано</option>
+                            <option value="MMS0">Нет</option>
                           <option value="MMS1">МЭК 61850</option>
                           <option value="MMS2">МЭК 60870-5-103</option>
                             <option value="MMS3">МЭК 60870-5-104</option>
@@ -785,10 +799,9 @@ $this->setFrameMode(true);
                       <p>13. Модули ввода/вывода</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
+                        	<option selected value="">Не выбрано</option>
                           <option value="EM00">(16BI+9BO)</option>
-                          <option selected value="EM01">(16BI+9BO)+1x(16BI+12BO):(1xУКБ1)</option>
-                         
-                          
+                          <option value="EM01">(16BI+9BO)+1x(16BI+12BO):(1xУКБ1)</option>
                         </select>
                       </div>
                     </div>
