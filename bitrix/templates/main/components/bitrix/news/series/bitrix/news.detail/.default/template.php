@@ -112,7 +112,7 @@ $this->setFrameMode(true);
 					<?endif?>
 				</div>
 				<div class="item_video">
-					<video width="320" height="240" autoplay="autoplay" controls="controls" loop="loop" tabindex="0">
+					<video width="320" height="240" autoplay="autoplay" controls loop="loop" controlsList="nodownload" tabindex="0">
 					    <source src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/bitrix/templates/.default/img/201_МР3-1_0001.mp4" type="video/mp4">
 					    <source src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/bitrix/templates/.default/img/201_3-1_0001.ogv" type='video/ogg; codecs="theora, vorbis"'>
 					  	<source src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/bitrix/templates/.default/img/201_3-1_0001.webm" type='video/webm; codecs="vp8, vorbis"'>
