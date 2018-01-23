@@ -6,7 +6,7 @@
 	array(
 		"USE_CAPTCHA" => "N",
 		"OK_TEXT" => "Отправлено",
-		"EMAIL_TO" => "dllpiton@yandex.ru",
+		"EMAIL_TO" => "info@mzrza.ru",
 		"REQUIRED_FIELDS" => array(
 			0 => "NAME",
 			1 => "EMAIL",
