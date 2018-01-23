@@ -1,14 +1,14 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Шеф-монтаж", 
+		"Шефмонтаж",
 		"/support/shef-montazh/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Шеф-наладка", 
+		"Шефналадка",
 		"/support/shef-naladka/", 
 		Array(), 
 		Array(), 
