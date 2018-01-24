@@ -34,6 +34,7 @@ $('.main-slider').slick({
 
 $('.open_user_popup').on('click', function(e){
 	e.preventDefault();
+    $('.info_before h3').text($(this).data('name'));
 	$('.unser_info_popup_box').fadeIn(300);
 });
 
@@ -133,9 +134,20 @@ $('.unser_info_popup .close_popup').on('click', function(){
 	$('.unser_info_popup_box').fadeOut(300);
 });
 
-$('.unser_info_popup .popup_user_form').on('submit', function(){
-	$('.info_before').hide();
-	$('.info_after').fadeIn(300);
+//$('.popup_user_form .btn').on('click', function(){
+//    return false;
+//});
+
+$('.unser_info_popup .popup_user_form .btn').on('click', function(){
+    console.log('submit');
+    if(validate($('.popup_user_form'))){
+        $('.popup_user_form').ajaxSubmit({
+            clearForm: true,
+            success: success
+        });
+        $('.info_before').hide();
+        $('.info_after').fadeIn(300);
+    }
 });
 
 $('.form_new .your_contacts input[type="email"]').on('keyup', function(){

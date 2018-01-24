@@ -19,7 +19,7 @@ $this->setFrameMode(true);
 	$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
 	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 	?>
-	<a class="blue_button open_user_popup" href="<?=$arItem["DISPLAY_PROPERTIES"]['FILE']['FILE_VALUE']['SRC']?>" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+	<a class="blue_button open_user_popup" href="<?=$arItem["DISPLAY_PROPERTIES"]['FILE']['FILE_VALUE']['SRC']?>" id="<?=$this->GetEditAreaId($arItem['ID']);?>" data-name="<?=$arItem['NAME']?>">
 		<span class="doc_item">
 			<span class="doc_img">
 				<img src="/img/<?=strtolower($arItem["DISPLAY_PROPERTIES"]['TYPE']['VALUE'])?>_img.png" alt="<?=$arItem['NAME']?>">

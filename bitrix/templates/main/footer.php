@@ -106,7 +106,7 @@
 			<div class="info_before">
 				<div class="close_popup">x</div>
 				<h3>Форма обратной связи</h3>
-				<form action="." method="post" class="popup_user_form">
+				<form action="/ajax/submit_user_order.php" method="post" class="popup_user_form">
 					<div class="form_input_wrap">
 						<input type="text" name="popup_name" placeholder="Имя" required>
 						<p class="req">Введите корректное имя</p>
@@ -132,10 +132,10 @@
 						<option value=".">Конкурс/Проектная документация</option>
 						<option value=".">Поставка</option>
 					</select>
-					<button class="btn">Отправить</button>
+					<button type="button" class="btn submit">Отправить</button>
 				</form>
 			</div><!-- info_before -->
-			<div class="info_after">
+			<div class="info_after"><div class="close_popup">x</div>
 				<h3>Ваша заявка отправлена! Спасибо!</h3>
 			</div>
 		</div>
