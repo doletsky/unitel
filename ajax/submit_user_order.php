@@ -29,5 +29,3 @@ $arFields = Array(
 );
 
 CEvent::Send("FEEDBACK_FORM", SITE_ID, $arFields, "N", 35);
-
-file_put_contents($_SERVER['DOCUMENT_ROOT'].'/ajax/log.txt',print_r($_REQUEST, true).print_r($fields, true));
