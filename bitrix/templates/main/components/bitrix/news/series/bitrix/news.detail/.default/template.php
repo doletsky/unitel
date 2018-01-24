@@ -271,7 +271,6 @@ $this->setFrameMode(true);
                                                 <div class="conf_item" id="nominal_tok_select_conf"></div>
                                                 <div class="conf_item" id="mod_conect1_conf"></div>
                                                 <div class="conf_item" id="mod_conect2_conf"></div>
-                                                <br>
                                                 <div class="conf_item" id="mod_conect3_conf"></div>
                                                 <div class="conf_item" id="mod_conect4_conf"></div>
                                                 <div class="conf_item" id="var_functions_conf"></div>

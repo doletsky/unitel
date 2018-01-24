@@ -125,7 +125,7 @@ $('.form_new .your_contacts input[name="user_name"], .form_new .your_contacts in
 	this.value = this.value.replace(/^[a-zA-Z0-9]*$/i, "");
 });
 
-$('.unser_info_popup .popup_user_form input[name="popup_name"]').on('keyup', function(){
+$('.popup_user_form input[name="popup_name"], .popup_user_form input[name="popup_dolz"]').on('keyup', function(){
 	this.value = this.value.replace(/^[a-zA-Z0-9]*$/i, "");
 });
 

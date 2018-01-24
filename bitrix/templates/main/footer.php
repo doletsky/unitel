@@ -108,12 +108,30 @@
 				<h3>Форма обратной связи</h3>
 				<form action="." method="post" class="popup_user_form">
 					<div class="form_input_wrap">
-						<input type="text" name="popup_name" placeholder="ФИО" required>
+						<input type="text" name="popup_name" placeholder="Имя" required>
 						<p class="req">Введите корректное имя</p>
 					</div>
-					<input type="email" placeholder="Email" required>
-					<input type="phone" placeholder="Телефон" required>
-					<textarea name="user_pop_message" placeholder="Комментарий" required></textarea>
+					<div class="form_input_wrap">
+						<input type="text" name="popup_dolz" placeholder="Должность" required>
+						<p class="req">Введите корректную должность</p>
+					</div>
+					<div class="form_input_wrap">
+						<input type="text" name="popup_org" placeholder="Организация" required>
+						<p class="req">Введите корректную организацию</p>
+					</div>
+					<div class="form_input_wrap">
+						<input type="email" name="popup_email" placeholder="Email" required>
+						<p class="req">Введите корректный email</p>
+					</div>
+					<div class="form_input_wrap">
+						<input type="phone" name="popup_tel" placeholder="Телефон" required>
+						<p class="req">Введите корректный телефон</p>
+					</div>
+					<select name="popup-select" id="popup-select">
+						<option selected value="">Не выбрано</option>
+						<option value=".">Конкурс/Проектная документация</option>
+						<option value=".">Поставка</option>
+					</select>
 					<button class="btn">Отправить</button>
 				</form>
 			</div><!-- info_before -->
