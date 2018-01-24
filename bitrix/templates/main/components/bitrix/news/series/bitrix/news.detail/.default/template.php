@@ -243,7 +243,13 @@ $this->setFrameMode(true);
 										</div>
 									</div>
 									<div class="code_conf">
-										<h3>Код конфигурации <span class="product_conf_name">МРЗ-3Л3</span>:</h3>
+										<h3>Код конфигурации <span class="product_conf_name">
+                                                <?if($arResult['ID']==18):?>
+                                                    МРЗ-3Л3
+                                                <?elseif($arResult['ID']==16):?>
+                                                    МРЗ-1
+                                                <?endif?>
+                                            </span>:</h3>
 										<div class="conf_list">
                                             <?if($arResult['ID']==17)://for РЗА 110-220 кВ МРЗ-3?>
 												<p>Устройства МРЗ-3 поставляются исключительно в составе шкафов РЗА. Для запроса технической документации и предоставления ценового предложения заполните форму обратной связи</p>
@@ -837,6 +843,12 @@ $this->setFrameMode(true);
                           <option value="EM01">(16BI+9BO)+1x(16BI+12BO):(1xУКБ1)</option>
                         </select>
                       </div>
+                    </div>
+                    <div class="config_item">
+                        <p>14. Количество устройств</p>
+                        <div class="config_select">
+                            <input type="number" id="number_select" min="1" max="50" value="1">
+                        </div>
                     </div>
                     <?/*?><div class="config_item">
                       <p>19. Каналы постоянного тока</p>
