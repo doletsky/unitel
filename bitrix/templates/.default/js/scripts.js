@@ -29,7 +29,13 @@ $('.main-slider').slick({
 	arrows: false,
 	useTransform: true,
 	speed: 800
-})
+});
+
+
+$('.open_user_popup').on('click', function(e){
+	e.preventDefault();
+	$('.unser_info_popup_box').fadeIn(300);
+});
 
 $('a.proj_link').fancybox();
 
@@ -113,10 +119,23 @@ function scrollFade(){
 	$('.scrolldown').fadeOut(300);
 }
 
-$('.form_new .your_contacts input[type="phone"]').mask("+7(999)999-99-99");
+$('input[type="phone"]').mask("+7(999)999-99-99");
 
 $('.form_new .your_contacts input[name="user_name"], .form_new .your_contacts input[name="user_dol"]').on('keyup', function(){
 	this.value = this.value.replace(/^[a-zA-Z0-9]*$/i, "");
+});
+
+$('.unser_info_popup .popup_user_form input[name="popup_name"]').on('keyup', function(){
+	this.value = this.value.replace(/^[a-zA-Z0-9]*$/i, "");
+});
+
+$('.unser_info_popup .close_popup').on('click', function(){
+	$('.unser_info_popup_box').fadeOut(300);
+});
+
+$('.unser_info_popup .popup_user_form').on('submit', function(){
+	$('.info_before').hide();
+	$('.info_after').fadeIn(300);
 });
 
 $('.form_new .your_contacts input[type="email"]').on('keyup', function(){
@@ -162,12 +181,6 @@ $('.main_prod_slider').slick({
 	autoplaySpeed: 4000,
 });
 
-$(document).on('load', function(){
-	/*var path = document.querySelector("svg path");
-	var total_length = path.getTotalLength();*/
-
-});
-
 if(window.location.href.indexOf("voltage_id=16") > -1) {
     $('#for_tech').show();
 } else{
@@ -176,6 +189,13 @@ if(window.location.href.indexOf("voltage_id=16") > -1) {
 
 if(window.location.href.indexOf("dealers") > -1) {
     $('h1.page_title').hide();
+}
+if(window.location.href.indexOf("rza-110-220kv-mrz-3") > -1){
+	$('.form_new .your_contacts').hide();
+	$('.your_config').hide();
+	$('.code_conf h3').hide();
+	$('.number_conf').hide();
+	$('#price_request_form .btn').hide();
 }
 
 if(window.location.href.indexOf("rza-6-35-kv-mrz-3l3") > -1) {
@@ -471,15 +491,6 @@ $(".perechen").click(function(){
 	return false;
 });
 
-if(window.location.href.indexOf('rza-6-35kv-mrz-1') != -1) {
-    console.log('rza-6-35kv-mrz-1');
-    $('.item-slider-wrapp').hide();
-    $('.item-equipment .section-title').hide();
-    $('.item-equipment .item_size').hide();
-} else {
-	var my_hash = window.location.href;
-    console.log(my_hash);
-}
 
 $('#price_request_form').on('submit', function(e) {
 	e.preventDefault();

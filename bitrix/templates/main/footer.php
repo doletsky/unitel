@@ -101,6 +101,27 @@
 			</div>
 		</form>
 	</div>
+	<div class="unser_info_popup_box">
+		<div class="unser_info_popup">
+			<div class="info_before">
+				<div class="close_popup">x</div>
+				<h3>Форма обратной связи</h3>
+				<form action="." method="post" class="popup_user_form">
+					<div class="form_input_wrap">
+						<input type="text" name="popup_name" placeholder="ФИО" required>
+						<p class="req">Введите корректное имя</p>
+					</div>
+					<input type="email" placeholder="Email" required>
+					<input type="phone" placeholder="Телефон" required>
+					<textarea name="user_pop_message" placeholder="Комментарий" required></textarea>
+					<button class="btn">Отправить</button>
+				</form>
+			</div><!-- info_before -->
+			<div class="info_after">
+				<h3>Ваша заявка отправлена! Спасибо!</h3>
+			</div>
+		</div>
+	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="/bitrix/templates/.default/js/plugins.js"></script>
 	<script src="/bitrix/templates/.default/js/maskedInput.js"></script>
