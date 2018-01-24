@@ -113,7 +113,13 @@ $this->setFrameMode(true);
 				</div>
 				<div class="item_video">
 					<video width="320" height="240" autoplay="autoplay" controls loop="loop" controlsList="nodownload" tabindex="0">
-					    <source src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/bitrix/templates/.default/img/201_МР3-1_0001.mp4" type="video/mp4">
+                        <?if($arResult['ID']==16):?>
+                            <source src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/bitrix/templates/.default/img/MPZ-1_UKB.mp4" type="video/mp4">
+                        <?elseif($arResult['ID']==17):?>
+                            <source src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/bitrix/templates/.default/img/MRZ-3.mp4" type="video/mp4">
+                        <?elseif($arResult['ID']==18):?>
+                            <source src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/bitrix/templates/.default/img/MRZ-3l3.mp4" type="video/mp4">
+                        <?endif?>
 					    <source src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/bitrix/templates/.default/img/201_3-1_0001.ogv" type='video/ogg; codecs="theora, vorbis"'>
 					  	<source src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/bitrix/templates/.default/img/201_3-1_0001.webm" type='video/webm; codecs="vp8, vorbis"'>
 					   Your browser does not support the video tag.
