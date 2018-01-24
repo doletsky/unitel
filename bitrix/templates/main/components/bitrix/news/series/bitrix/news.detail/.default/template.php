@@ -240,13 +240,15 @@ $this->setFrameMode(true);
 										<h3>Код конфигурации <span class="product_conf_name">МРЗ-3Л3</span>:</h3>
 										<div class="conf_list">
                                             <?if($arResult['ID']==17)://for РЗА 110-220 кВ МРЗ-3?>
-                                                <div class="conf_item conf_type_of_function" id="type_of_function_select_conf"></div>
+												<p>Устройства МРЗ-3 поставляются исключительно в составе шкафов РЗА. Для запроса технической документации и предоставления ценового предложения заполните форму обратной связи</p>
+                                                <!-- <div class="conf_item conf_type_of_function" id="type_of_function_select_conf"></div>
                                                 <div class="conf_item conf_diapazon" id="diapazon_select_conf"></div>
-                                                <div class="conf_item conf_execution" id="execution_select_conf"></div>
-                                                <div class="conf_item conf_output" id="output_select_conf"></div>
+                                                <div class="conf_item conf_execution" id="disc_output_select_conf"></div>
+                                                <div class="conf_item conf_output" id="disc_input_select_conf"></div>
                                                 <div class="conf_item conf_klem_block" id="klem_block_select_conf"></div>
                                                 <div class="conf_item conf_nominal" id="nominal_select_conf"></div>
-                                                <div class="conf_item conf_gost" id="gost_select_conf"></div>
+                                                <div class="conf_item conf_gost" id="gost_select_conf"></div> -->
+
                                             <?elseif($arResult['ID']==16)://for РЗА 6-35 кВ МРЗ-1?>
                                                 <div class="conf_item conf_type_of_function" id="type_of_function_select_conf"></div>
                                                 <div class="conf_item conf_diapazon" id="diapazon_select_conf"></div>
