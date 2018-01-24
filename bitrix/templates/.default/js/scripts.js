@@ -35,6 +35,7 @@ $('.main-slider').slick({
 $('.open_user_popup').on('click', function(e){
 	e.preventDefault();
     $('.info_before h3').text($(this).data('name'));
+    $('#popup_title').val($(this).data('name'));
 	$('.unser_info_popup_box').fadeIn(300);
 });
 

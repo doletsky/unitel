@@ -28,7 +28,7 @@ $this->setFrameMode(true);
 							<div class="item-img clearfix">
 								<img src="<?=$arResult["DETAIL_PICTURE"]["SRC"]?>" alt="">
 							</div>
-							<a href="/support/documents/" class="btn btn-block item-btn btn-scroll">Техническое описание</a>
+							<a href="/support/documents/" class="btn btn-block open_user_popup" data-name="Серия устройств <?=$arResult["NAME"]?>">Техническое описание</a>
 							<a href="#item-footer" class="btn btn-block item-btn btn-scroll">Запросить цену</a>
 							<div class="item-btn-desc">Заполните форму, чтобы узнать стоимость решения</div>
 						</div>

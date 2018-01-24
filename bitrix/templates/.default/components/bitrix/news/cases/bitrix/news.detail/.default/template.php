@@ -103,7 +103,7 @@ $this->setFrameMode(true);
 									<img src="<?=$file['src']?>" alt="">
 								</a>
 								<a target="_blank" href="/request-schemas/" class="btn">Схемы</a><br><br>
-								<a target="_blank" href="/support/documents/" class="btn">Техническое описание</a>
+								<a href="/support/documents/" class="btn open_user_popup" data-name="<?=$arResult["NAME"]?>">Техническое описание</a>
 							</div>
 						</div>
 						<div class="sidebar-widget">

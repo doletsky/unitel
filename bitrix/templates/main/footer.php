@@ -107,6 +107,7 @@
 				<div class="close_popup">x</div>
 				<h3>Форма обратной связи</h3>
 				<form action="/ajax/submit_user_order.php" method="post" class="popup_user_form">
+                    <input type="hidden" name="popup_title" id="popup_title">
 					<div class="form_input_wrap">
 						<input type="text" name="popup_name" placeholder="Имя" required>
 						<p class="req">Введите корректное имя</p>
@@ -127,10 +128,13 @@
 						<input type="phone" name="popup_tel" placeholder="Телефон" required>
 						<p class="req">Введите корректный телефон</p>
 					</div>
+                    <div class="form_input_wrap">
+                        <input type="text" name="popup_obj" placeholder="Объект" required>
+                    </div>
 					<select name="popup-select" id="popup-select">
 						<option selected value="">Не выбрано</option>
-						<option value=".">Конкурс/Проектная документация</option>
-						<option value=".">Поставка</option>
+						<option value="Конкурс/Проектная документация">Конкурс/Проектная документация</option>
+						<option value="Поставка">Поставка</option>
 					</select>
 					<button type="button" class="btn submit">Отправить</button>
 				</form>
