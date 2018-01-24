@@ -45,6 +45,8 @@ if( $arResult['DISPLAY_PROPERTIES']['EQUIPMENT']['VALUE'] ){
 	}
 }
 
-#pre($arResult['DISPLAY_PROPERTIES']['EQUIPMENT']['LINK_ELEMENT_VALUE']);
+$APPLICATION->AddChainItem($arResult['DISPLAY_PROPERTIES']['VOLTAGE']['VALUE'],'/case/?voltage_id='.$arResult['DISPLAY_PROPERTIES']['VOLTAGE']['VALUE_ENUM_ID']);
+$APPLICATION->AddChainItem($arResult["NAME"]);
+#pre($arResult['DISPLAY_PROPERTIES']['VOLTAGE']);
 
 ?>
