@@ -11,7 +11,7 @@ $APPLICATION->SetTitle("Запрос схем");
 					<div class="price-row row">
 						<div class="price-col col-6">
 							
-							<div class="price-download-desc">Для получения подробной информации оформите запрос в свободной форме и направьте его нам по электронной почте на адрес: <a href="mailto:orders@mzrza.ru">orders@mzrza.ru</a> или через форму</div>
+							<div class="price-download-desc">Для получения подробной информации оформите запрос в свободной форме и направьте его нам по электронной почте на адрес: <a href="mailto:info@mzrza.ru">info@mzrza.ru</a> или через форму</div>
 						</div>
 						<div class="price-col col-6">
 							<form action="/ajax/schemes_form.php" method="POST"  class="form contacts-form">
