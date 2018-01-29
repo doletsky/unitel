@@ -295,6 +295,7 @@ $this->setFrameMode(true);
 									<input type="hidden" name="product_id" value="17">
 									<div class="your_config">
 										<h3>Выберите конфигурацию оборудования</h3>
+										<p class="red">Необходимо указать все параметры конфигурации</p>
 										<div class="config_item">
                       <p>1. Типоисполнение</p>
                       <div class="config_select">
@@ -309,6 +310,7 @@ $this->setFrameMode(true);
                       <p>2. Блок питания</p>
                       <div class="config_select">
                         <select name="config_select[]" class="select-2">
+                        	<option value="">Не выбрано</option>
                           <option selected value="PS3">пост/перем. 110-220 В</option>
                         </select>
                       </div>
@@ -521,10 +523,11 @@ $this->setFrameMode(true);
 									<input type="hidden" name="product_id" value="16">
 									<div class="your_config">
 										<h3>Выберите конфигурацию оборудования</h3>
+										<p class="red">Необходимо указать все параметры конфигурации</p>
 										<div class="config_item">
                       <p>1. Типоисполнение по выполняемым функциям</p>
                       <div class="config_select">
-                        <select id="type_of_function_select" name="config_select[]" class="select-2">
+                        <select id="type_of_function_select" name="config_select[]" class="select-2" required>
                         	<option selected value="">Не выбрано</option>
 							<option value="В">Вводной выключатель</option>
 							<option value="Д2">Двигатель (МТЗ, ТЗНП)</option>
@@ -637,6 +640,7 @@ $this->setFrameMode(true);
 									<input type="hidden" name="product_id" value="18">
 									<div class="your_config">
 										<h3>Выберите конфигурацию оборудования</h3>
+										<p class="red">Необходимо указать все параметры конфигурации</p>
 										<div class="config_item">
                       <p>1. Типоисполнение</p>
                       <div class="config_select">
@@ -889,22 +893,28 @@ $this->setFrameMode(true);
 			<div class="is_right">
 				<h2>Всё верно?</h2>
 				<div class="confirm_conf"></div>
-				<div class="list-item left-list">
-					<ul>
-						<li>1. Типоисполнение: <span class="type_of_function_select_li"></span></li>
-						<li>2. Диапазон: <span class="diapazon_select_li"></span></li>
-						<li>3. Токовые цепи: <span class="execution_select_li"></span></li>
-						<li>4. Выходные реле: <span class="output_select_li"></span></li>
-					</ul>
-				</div>
-				<div class="list-item right-list">
-					<ul>
-						<li>5. Клеммный блок: <span class="klem_block_select_li"></span></li>
-						<li>6. Дискретные входы: <span class="nominal_select_li"></span></li>
-						<li>7. Климатическое исполнение: <span class="gost_select_li"></span></li>
-						<li>8. Количество: <span class="number_select_li">1</span></li>
-					</ul>
-				</div>
+                <div class="list-item left-list">
+                    <ul>
+                        <li>1. Типоисполнение: <span class="mrz_type_select_li"></span></li>
+                        <li>2. Блок питания: <span class="mrz_block_select_li"></span></li>
+                        <li>3. Дискретные входы: <span class="disc_output_select_li"></span></li>
+                        <li>4. Номинальный фазовый ток: <span class="nominal_faz_select_li"></span></li>
+                        <li>5. Номинальный ток нулевой последовательности: <span class="nominal_tok_select_li"></span></li>
+                        <li>6. Модуль связи - Порт 1: <span class="mod_conect1_li"></span></li>
+                        <li>7. Модуль связи - Порт 2: <span class="mod_conect2_li"></span></li>
+                    </ul>
+                </div>
+                <div class="list-item right-list">
+                    <ul>
+                        <li>8. Модуль связи - Порт 3: <span class="mod_conect3_li">1</span></li>
+                        <li>9. Модуль связи - Порт 4: <span class="mod_conect4_li"></span></li>
+                        <li>10. Набор функций: <span class="var_functions_li"></span></li>
+                        <li>11. Дисплей: <span class="screen_li"></span></li>
+                        <li>12. Цифровой стандарт: <span class="numb_standart_li"></span></li>
+                        <li>13. Модули ввода/вывода: <span class="mod_out_in_li"></span></li>
+                        <li>14. Количество устройств: <span class="number_select_li"></span></li>
+                    </ul>
+                </div>
 				<div class="form_confirm_btns">
 					<div class="btn yes">Да</div>
 					<div class="btn no">Нет</div>

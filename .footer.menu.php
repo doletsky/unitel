@@ -1,36 +1,43 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Проекты", 
-		"/projects/", 
+		"Документация",
+		"/support/documents/",
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Партнеры", 
-		"/partners/", 
+		"Программное обеспечение",
+		"/support/soft/",
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Вакансии", 
-		"/vacancies/", 
+		"Шефмонтаж",
+		"/support/shef-montazh/",
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Обучение", 
-		"/support/study/", 
+		"Шефналадка",
+		"/support/shef-naladka/",
 		Array(), 
 		Array(), 
 		"" 
 	),
+    Array(
+        "Обучение",
+        "/support/obuchenie/",
+        Array(),
+        Array(),
+        ""
+    ),
 	Array(
-		"Пресса о нас", 
-		"/press-about-us/", 
+		"Цифровая подстанция",
+		"/case/?voltage_id=16",
 		Array(), 
 		Array(), 
 		"" 
@@ -38,13 +45,6 @@ $aMenuLinks = Array(
 	Array(
 		"Галерея объектов", 
 		"/objects-gallery/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Отраслевые решения", 
-		"/industry-solutions/", 
 		Array(), 
 		Array(), 
 		"" 
