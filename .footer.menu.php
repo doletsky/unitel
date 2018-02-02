@@ -7,13 +7,13 @@ $aMenuLinks = Array(
 		Array(), 
 		"" 
 	),
-	Array(
-		"Программное обеспечение",
-		"/support/soft/",
-		Array(), 
-		Array(), 
-		"" 
-	),
+    Array(
+        "Шефналадка",
+        "/support/shef-naladka/",
+        Array(),
+        Array(),
+        ""
+    ),
 	Array(
 		"Шефмонтаж",
 		"/support/shef-montazh/",
@@ -21,13 +21,13 @@ $aMenuLinks = Array(
 		Array(), 
 		"" 
 	),
-	Array(
-		"Шефналадка",
-		"/support/shef-naladka/",
-		Array(), 
-		Array(), 
-		"" 
-	),
+    Array(
+        "Цифровая подстанция",
+        "/case/?voltage_id=16",
+        Array(),
+        Array(),
+        ""
+    ),
     Array(
         "Обучение",
         "/support/obuchenie/",
@@ -35,13 +35,13 @@ $aMenuLinks = Array(
         Array(),
         ""
     ),
-	Array(
-		"Цифровая подстанция",
-		"/case/?voltage_id=16",
-		Array(), 
-		Array(), 
-		"" 
-	),
+    Array(
+        "Программное обеспечение",
+        "/support/soft/",
+        Array(),
+        Array(),
+        ""
+    ),
 	Array(
 		"Галерея объектов", 
 		"/objects-gallery/", 
