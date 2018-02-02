@@ -70,14 +70,14 @@ $this->setFrameMode(true);
 				<h2 class="section-title">Стандартная комплектация</h2>
 				<p class="item_size">Габариты прибора (мм): <?=$arResult['DISPLAY_PROPERTIES']['SIZE']['DISPLAY_VALUE']?></p>
 				<input id="back_slide_number" type="hidden" value="<?=$arResult['DISPLAY_PROPERTIES']['BACK_SLIDE']['DISPLAY_VALUE']?>">
-				<div class="item-slider-wrapp bounce-in-left">
+				<!-- <div class="item-slider-wrapp bounce-in-left">
 					<div class="item-slider">
 						<?foreach($arResult['DISPLAY_PROPERTIES']['IMG_3D']['FILE_VALUE'] as $arFile):?>
 							<div class="item-slide"><img src="<?=$arFile['SRC']?>" alt=""></div>
 						<?endforeach?>
 					
 					</div>
-					<div class="item-slider-rotate-info">360°</div>
+					<div class="item-slider-rotate-info">360°</div> -->
 					<?/*?>
 					<?if($arResult['DISPLAY_PROPERTIES']['DIODS']['DISPLAY_VALUE']):?>
 						<div class="item-slider-info--left-top item_front">
@@ -104,13 +104,13 @@ $this->setFrameMode(true);
 						</div>
 					<?endif?>
 					<?*/?>
-					<?if($arResult['DISPLAY_PROPERTIES']['LEFT_COL']['DISPLAY_VALUE']):?>
+					<!-- <?if($arResult['DISPLAY_PROPERTIES']['LEFT_COL']['DISPLAY_VALUE']):?>
 						<?=$arResult['DISPLAY_PROPERTIES']['LEFT_COL']['DISPLAY_VALUE']?>
 					<?endif?>
 					<?if($arResult['DISPLAY_PROPERTIES']['RIGHT_COL']['DISPLAY_VALUE']):?>
 						<?=$arResult['DISPLAY_PROPERTIES']['RIGHT_COL']['DISPLAY_VALUE']?>
 					<?endif?>
-				</div>
+									</div> -->
 				<div class="item_video">
 					<video width="320" height="240" autoplay="autoplay" controls loop="loop" controlsList="nodownload" tabindex="0">
                         <?if($arResult['ID']==16):?>
@@ -627,8 +627,12 @@ $this->setFrameMode(true);
                     <div class="config_item">
                       <p>8. Количество устройств</p>
                       <div class="config_select">
-                        <input type="number" id="number_select" min="1" max="50" value="1">
+                        <input type="number" name="numbers_ustr" id="number_select" min="1" max="50" value="1">
                       </div>
+                    </div>
+                    <div class="config_item message">
+                    	<p>9. Дополнительные требования</p>
+	                    <textarea name="message_input" class="config_message" placeholder="Дополнительные требования"></textarea>
                     </div>
                     
 									</div>
@@ -851,8 +855,12 @@ $this->setFrameMode(true);
                     <div class="config_item">
                         <p>14. Количество устройств</p>
                         <div class="config_select">
-                            <input type="number" id="number_select" min="1" max="50" value="1">
+                            <input type="number" name="numbers_ustr" id="number_select" min="1" max="50" value="1">
                         </div>
+                    </div>
+                    <div class="config_item message">
+                    	<p>15. Дополнительные требования</p>
+	                    <textarea name="message_input" class="config_message" placeholder="Дополнительные требования"></textarea>
                     </div>
                     <?/*?><div class="config_item">
                       <p>19. Каналы постоянного тока</p>
@@ -877,10 +885,12 @@ $this->setFrameMode(true);
 									<i class="alert">Введите телефон или эл. почту</i>
 									<input type="text" name="user_email" class="input valid" placeholder="Телефон или эл. почта">
 								</div> -->
-                <input type="hidden" name="is_perechen" id="is-perechen" value="">
-								<button type="submit" class="btn submit ask_price" formnovalidate>Запросить цену</button>
-								<button type="button" class="btn perechen" formnovalidate>Сформировать перечень выбранных устройств</button>
-								<button type="button" class="btn reset">Сброс параметров</button>
+                				<input type="hidden" name="is_perechen" id="is-perechen" value="">
+								<div class="conf_buttons">
+									<button type="submit" class="btn submit ask_price" formnovalidate>Запросить цену</button>
+									<button type="button" class="btn perechen" formnovalidate>Сформировать перечень выбранных устройств</button>
+									<button type="button" class="btn reset">Сброс параметров</button>
+								</div>
 							</div>
 						</form>
 					</div>
