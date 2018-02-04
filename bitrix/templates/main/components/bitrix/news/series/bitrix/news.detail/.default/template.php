@@ -262,6 +262,7 @@ $this->setFrameMode(true);
                                                 <div class="conf_item conf_gost" id="gost_select_conf"></div> -->
 
                                             <?elseif($arResult['ID']==16)://for РЗА 6-35 кВ МРЗ-1?>
+                                                <div class="conf_item">МРЗ-1</div>
                                                 <div class="conf_item conf_type_of_function" id="type_of_function_select_conf"></div>
                                                 <div class="conf_item conf_diapazon" id="diapazon_select_conf"></div>
                                                 <div class="conf_item conf_execution" id="execution_select_conf"></div>
@@ -270,6 +271,7 @@ $this->setFrameMode(true);
                                                 <div class="conf_item conf_nominal" id="nominal_select_conf"></div>
                                                 <div class="conf_item conf_gost" id="gost_select_conf"></div>
                                             <?elseif($arResult['ID']==18):// for РЗА 6-35 кВ МРЗ-3Л3?>
+
                                                 <div class="conf_item" id="type_of_function_select_conf"></div>
                                                 <div class="conf_item" id="diapazon_select_conf"></div>
                                                 <div class="conf_item" id="disc_output_select_conf"></div>
