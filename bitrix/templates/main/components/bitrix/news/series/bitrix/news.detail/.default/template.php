@@ -927,6 +927,7 @@ $this->setFrameMode(true);
                         <li>14. Количество устройств: <span class="number_select_li"></span></li>
                     </ul>
                 </div>
+                <p class="is_message"><span>Дополнительные требования: </span><span class="message">-</span></p>
 				<div class="form_confirm_btns">
 					<div class="btn yes">Да</div>
 					<div class="btn no">Нет</div>
