@@ -21,7 +21,7 @@
 	<link href="/favicon.ico" rel="shortcut icon">
 </head>
 <body>
-	<div id="panel"><?$APPLICATION->ShowPanel();?></div>
+
 	<header class="header">
 		<div class="container">
 			<div class="header-row">
@@ -95,4 +95,4 @@
 		"SITE_ID" => "s1" 
 	)
 );?>
-	
+    <div id="panel" style="margin-top: 140px"><?$APPLICATION->ShowPanel();?></div>
