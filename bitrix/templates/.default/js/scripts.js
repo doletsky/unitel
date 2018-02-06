@@ -596,6 +596,7 @@ function gatherInputsValues(values, elements)
             switch(el.type.toLowerCase())
             {
                 case 'text':
+                case 'email':
                 case 'number':
                 case 'textarea':
                 case 'password':

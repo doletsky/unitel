@@ -875,7 +875,7 @@ $this->setFrameMode(true);
                     </div><?*/?>
 									</div><?endif?>
 								</div>
-								<!-- <div class="form-block">
+								<?/*?> <div class="form-block">
 									<i class="alert">Введите Ваше имя</i>
 									<input type="text" name="user_name"  class="input valid" placeholder="Ваше имя">
 								</div>
@@ -885,8 +885,8 @@ $this->setFrameMode(true);
 								</div>
 								<div class="form-block">
 									<i class="alert">Введите телефон или эл. почту</i>
-									<input type="text" name="user_email" class="input valid" placeholder="Телефон или эл. почта">
-								</div> -->
+									<input type="text" name="user*_email" class="input valid" placeholder="Телефон или эл. почта">
+								</div> <?*/?>
                 				<input type="hidden" name="is_perechen" id="is-perechen" value="">
 								<div class="conf_buttons">
 									<button type="submit" class="btn submit ask_price" formnovalidate>Запросить цену</button>
